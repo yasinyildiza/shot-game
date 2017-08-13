@@ -1,0 +1,372 @@
+body{
+	position: relative;
+	float: left;
+	width: 1300px;
+	height: 700px;
+	margin-left: 310px;
+	border: 1px solid black;
+}
+
+.generic{
+	position: relative;
+	float: left;
+	width: auto;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	font-family: Lucida;
+	font-size: 40px;
+	color: black;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-decoration: none;
+	display: block;
+	visibility: visible;
+}
+
+.container{
+	overflow: visible;
+}
+
+.button{
+	padding: 2px;
+}
+
+.button:focus{
+	padding: 0px;
+	border: 2px solid black;
+}
+
+.input{}
+
+.label{}
+
+.image{}
+
+#left_side{
+	width: 310px;
+	height: 100%;
+}
+
+#right_side{
+	width: 990px;
+	height: 100%;
+}
+
+#top_right{
+	width: 100%;
+	height: 60px;
+	padding: 10px;
+	margin-left: 50px;
+}
+
+#middle_center{
+	width: 220px;
+	height: 640px;
+	margin-left: 60px;
+	margin-top: 40px;
+}
+
+#middle_right{
+	width: 710px;
+	height: 640px;
+}
+
+#timer_container{
+	width: 150px;
+	padding: 10px;
+	margin-left: 68px;
+}
+
+#timer{
+	width: 100%;
+}
+
+#timer_button_container{
+	width: 100%;
+}
+
+.button.timer{
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+	background-size: 100% 100%;
+}
+
+#swf_container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: none;
+}
+
+#swf{
+	width: 100%;
+	height: 100%;
+}
+
+.button.swf{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+#close_swf{
+	width: 100%;
+	height: 100%;
+}
+
+#close_swf_small{
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+}
+
+#take_card_container{
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.button.card{
+	width: 220px;
+	padding: 10px 0px;
+	background-color: #C00000;
+	border: 2px solid silver;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.button.card.disable{
+	background-color: gray;
+}
+
+#all_cards_container{
+	width: 290px;
+	height: 120px;
+	margin: 10px;
+	margin-top: 20px;
+}
+
+.small_card{
+	width: 20px;
+	height: 28px;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	visibility: hidden;
+}
+
+#current_card_container{
+	//margin-left: 10px;
+}
+
+#current_card{
+	width: 200px;
+	height: 280px;
+	margin: 10px;
+	//margin-left: 60px;
+}
+
+#previous_card{
+	width: 100px;
+	height: 140px;
+	margin: 10px;
+	margin-left: 60px;
+}
+
+#current_action_container{
+	margin: 10px;
+	margin-left: -15px;
+}
+
+#current_action{
+	width: 450px;
+	height: 80px;
+	font-size: 30px;
+}
+
+.current_action{
+	width: 100%;
+	font-size: 26px;
+}
+
+#middle_shot_container{
+	width: 200px;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+
+.container.middle_shot{
+	margin-left: 25px;
+}
+
+.button.middle_shot{
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+}
+
+.button.middle_shot#plus_middle_shot{
+	background-image: url("images/middle_shot/plus.png");
+}
+
+.button.middle_shot#minus_middle_shot{
+	background-image: url("images/middle_shot/minus.png");
+}
+
+#bottle_middle_shot{
+	width: 150px;
+	height: 150px;
+	background-image: url("images/middle_shot/empty.jpg");
+	background-size: 100% 100%;
+}
+
+#shot_counter{
+	position: absolute;
+	top: 400px;
+	left: 0px;
+	font-size: 100px;
+}
+
+#add_player_button_container{
+	margin-top: 40px;
+	margin-left: 140px;
+}
+
+#add_player_input{
+	width: 300px;
+	border: 1px solid gray;
+	padding: 5px;
+	margin-top: 2px;
+}
+
+#add_player_input:focus{
+	padding: 1px;
+	border: 4px solid gray;
+}
+
+#add_player_button{
+	background-color: #006699;
+	color: white;
+	border: 2px solid #006699;
+	border-radius: 5px;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+#players_container{
+	margin-left: 280px;
+	/*margin-top: 30px;*/
+}
+
+.completed{
+	/*padding-top: 100px;*/
+}
+
+.player_container{
+	margin: 5px;
+	margin-bottom: 10px;
+}
+
+.player_container.loser{
+	border: 2px solid black;
+}
+
+.player_container.winner{
+	border: 6px solid black;
+}
+
+.player_container.nothing{
+	border: 4px solid black;
+}
+
+.player_container.animate{
+	//margin-left: -5px;
+}
+
+.player_buttons_container{
+	width: 100px;
+	height: 150px;
+}
+
+.player_name{
+	width: 200px;
+	padding-top: 30px;
+}
+
+.player_name.active{
+	color: red;
+	font-weight: bold;
+}
+
+.player_name.animate{
+	margin-left: 5px;
+}
+
+.player_button.inc_dec{
+	width: 25px;
+	height: 25px;
+	margin-left: 37px;
+	
+	background-size: 100% 100%;
+	display: none;
+}
+
+.player_button.inc_dec.inc{
+	background-image: url("images/middle_shot/plus.png");
+}
+
+.player_button.res{
+	width: 100px;
+	height: 100px;
+	background-image: url("images/middle_shot/shot_empty.png");
+	background-size: 100% 100%;
+}
+
+.player_button.res.animate{
+	margin-top: -5px;
+}
+
+.player_button.res.empty{
+	background-image: url("images/middle_shot/shot_empty.png");
+}
+
+.player_button.res.full{
+	background-image: url("images/middle_shot/shot_full.png");
+}
+
+.player_button.inc_dec.dec{
+	display: block;
+	background-image: url("images/middle_shot/minus.png");
+}
+
+.player_score{
+	width: 90px;
+	margin-left: 10px;
+	padding-top: 30px;
+	font-size: 30px;
+}
+
+.player_score.animate{
+	margin-top: -5px;
+}
+
+#remaining_container{
+	display: none;
+	margin-top: 50px;
+}
+
+#remaining_text{
+	font-size: 30px;
+}
+
+#remaining{
+	margin-left: 30px;
+	font-size: 30px;
+}
